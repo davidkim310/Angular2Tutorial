@@ -12,3 +12,10 @@
 <!--can be hard-coded or set to a method-->
 <p [ngClass]="{redBorder: onTest()}">Is this styled</p>
 <p [ngStyle]="{color: 'green'}">Is this styled</p>
+<h3>Custom Property Binding</h3>
+<!--property binding uses [], binding from the outside-->
+<fa-property-binding [result]='10'></fa-property-binding>
+<h1>Event Binding</h1>
+<!--connect the component to the html-->
+<!--in order to store data passed through we use $event-->
+<fa-event-binding (clicked)='onClicked($event)'></fa-event-binding>
