@@ -1,0 +1,14 @@
+<h1>
+  String Interpolation
+</h1>
+<p>
+  {{stringInterpolation}} | {{numberInterpolation}}
+</p>
+<hr>
+<h1>Property Binding</h1>
+<!--property binding followed by javascript object-->
+<input type="text" [value]="stringInterpolation">
+<!--javascript object follows after property binding-->
+<!--can be hard-coded or set to a method-->
+<p [ngClass]="{redBorder: onTest()}">Is this styled</p>
+<p [ngStyle]="{color: 'green'}">Is this styled</p>
