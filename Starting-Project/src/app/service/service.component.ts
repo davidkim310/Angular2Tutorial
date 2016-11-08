@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DataService } from './data.service';
+import { LogService } from './log.service';
 
 @Component({
     selector: 'si-service',
@@ -7,7 +8,7 @@ import { DataService } from './data.service';
     <si-cmp-a></si-cmp-a>
     <si-cmp-b></si-cmp-b>
   `,
-  providers: [DataService]
+  providers: [DataService, LogService]
 })
 export class ServiceComponent {
 }

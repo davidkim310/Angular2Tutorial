@@ -23,7 +23,7 @@ import { DataService } from './data.service';
         <p>{{value}}</p>
     </div>
   `,
-  providers: [LogService]
+//   providers: [LogService]
 })
 export class CmpAComponent {
     value = '';
@@ -44,6 +44,6 @@ export class CmpAComponent {
     }
 
     onSend(value: string) {
-
+        this.dataService.pushData(value);
     }
 }

@@ -22,7 +22,7 @@ import { DataService } from './data.service';
         <p>{{value}}</p>
     </div>
   `,
-  providers: [LogService]
+//   providers: [LogService]
 })
 export class CmpBComponent implements OnInit {
     value = '';
@@ -43,5 +43,9 @@ export class CmpBComponent implements OnInit {
     }
 
     ngOnInit() {
+        //passing data directly between components through a service using eventemitter
+        this.dataService.pushedData.subscribe(
+            data => this.value = data
+        );
     }
 }
