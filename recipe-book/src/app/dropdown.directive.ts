@@ -16,4 +16,4 @@ export class DropdownDirective {
   private isOpen = false;
 }
 
-//after listeners are established,
+//after listeners are established, make sure to add the selector to the html
